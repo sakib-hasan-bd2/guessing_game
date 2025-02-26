@@ -55,7 +55,6 @@ player2btn.addEventListener('click', function () {
           player3btn.style.display = 'inline-block';
           chance.style.display = 'none';
           chance2.style.display = 'block';
-         
         }
       } else {
         player.innerHTML = 'player-3';
@@ -65,7 +64,6 @@ player2btn.addEventListener('click', function () {
         player3btn.style.display = 'inline-block';
         chance.style.display = 'none';
         chance2.style.display = 'block';
-        
       }
     }
   }
@@ -89,9 +87,9 @@ player3btn.addEventListener('click', function () {
           winner('player 2 win');
         } else if (player1box.value == player3box.value) {
           winner('player 3 win');
+        }else {
+          winner('player 1 win');
         }
-      } else {
-        winner('player 1 win');
       }
     }
   }

@@ -1,0 +1,24 @@
+.player2box{
+  display: none;
+}
+.player2btn{
+  display: none;
+}
+.player3box{
+  display: none;
+}
+.player3btn{
+  display: none;
+}
+.chance{
+  display: none;
+}
+.chance2{
+  display: none;
+}
+img{
+  display: none;
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+}

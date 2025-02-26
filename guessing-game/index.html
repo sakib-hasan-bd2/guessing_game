@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="sakib hasan">
+  <meta name="description" content="guessing game">
+  <title>guessing-game</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <h1 class="player">player-1</h1>
+  <h4 class="chance"> chance : <span>5</span></h4>
+  <h4 class="chance2"> chance : <span class="chance_s">5</span></h4>
+  <input class="player1box" type="password" placeholder="Enter the number">
+  <button class="player1btn">start the game</button>
+  <input class="player2box" type="text" placeholder="Enter the number">
+  <button class="player2btn">guess the number</button>
+  <input class="player3box" type="text" placeholder="Enter the number">
+  <button class="player3btn">guess the number</button>
+  <h3 class="error"></h3>
+  <img src="./Winner.jpg" alt="img">
+
+
+
+  <!-- ================================== -->
+   <script src="./js/script.js"></script>
+
+  <!-- let player1box = document.querySelector('.player1box');
+  let player1btn = document.querySelector('.player1btn');
+  let player2box = document.querySelector('.player2box');
+  let player2btn = document.querySelector('.player2btn');
+  let error = document.querySelector('.error');
+  let player = document.querySelector('.player');
+  let chance = document.querySelector('.chance');
+  let span = document.querySelector('span');
+  let img = document.querySelector('img');
+  
+  let count = 5;
+  
+  player1btn.addEventListener('click', function () {
+  console.log(player1box.value);
+  if (isNaN(player1box.value)) {
+  error.innerHTML = 'please enter a number';
+  } else {
+  error.innerHTML = '';
+  if (player1box.value > 10 || player1box.value < 1) {
+    error.innerHTML='please enter a number less then 10 and greater than 1' ; } else { error.innerHTML='' ;
+    player.innerHTML='player-2' ; player1box.style.display="none" player1btn.style.display="none"
+    player2box.style.display="inline-block" player2btn.style.display="inline-block" chance.style.display="block" } } })
+    player2btn.addEventListener('click', function () { if (isNaN(player2box.value)) {
+    error.innerHTML='please enter a number' ; } else { error.innerHTML='' ; if (player2box.value> 10 || player2box.value <
+      1) { error.innerHTML='please enter a number less then 10 and greater than 1' ; } else { error.innerHTML='' ; if
+      (count> 0) {
+      span.innerHTML = count;
+      count--;
+      if (player1box.value == player2box.value) {
+      winner('player 2 win');
+      }
+      }else {
+      winner('player 1 win');
+      }
+  
+      }
+      }
+      })
+  
+      function winner(win){
+      player.innerHTML = win;
+      player1box.style.display = 'none';
+      player1btn.style.display = 'none';
+      player2box.style.display = 'none';
+      player2btn.style.display = 'none';
+      chance.style.display = 'none';
+      img.style.display = 'block';
+      } -->
+</body>
+</html>

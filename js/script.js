@@ -81,13 +81,13 @@ player3btn.addEventListener('click', function () {
       if (count2 > 0) {
         chance_s.innerHTML = count2;
         count2--;
-        if (player2box.value == player3box.value) {
+        if (player1box.value == player2box.value == player3box.value) {
           winner('player 2 & 3 win');
         } else if (player1box.value == player2box.value) {
           winner('player 2 win');
         } else if (player1box.value == player3box.value) {
           winner('player 3 win');
-        }else {
+        } else {
           winner('player 1 win');
         }
       }
